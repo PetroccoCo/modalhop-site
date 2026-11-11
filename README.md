@@ -27,7 +27,7 @@ Record TTL is the Porkbun default (600 seconds) unless noted here.
 
 ## HTTPS
 
-After DNS settles, GitHub provisions a certificate (can take up to about an hour). Then tick "Enforce HTTPS" in Settings → Pages. Check, with no certificate warnings and without VPN or Tailscale:
+After DNS settles, GitHub provisions a certificate (can take up to about an hour). Then tick "Enforce HTTPS" in Settings → Pages. Check, with no certificate warnings and from a network that is not on a private VPN:
 
 ```sh
 dig +short modalhop.com A
