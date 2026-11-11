@@ -1,6 +1,6 @@
 # modalhop-site
 
-Static placeholder for <https://modalhop.com>: a single "ModalHop is in development" page. Plain HTML and CSS, no build step, no scripts, no analytics.
+Static placeholder for <https://modalhop.com>: a single "ModalHop is in development" page. Plain HTML and CSS, no build step, no scripts, no tracking.
 
 The ModalHop application is developed in a separate private repository. Nothing from it lives here, and this site does not host any backend or API.
 
@@ -34,6 +34,7 @@ dig +short modalhop.com A
 dig +short www.modalhop.com CNAME
 curl -sSIL http://modalhop.com | grep -iE '^(HTTP|location)'
 curl -sSIL http://www.modalhop.com | grep -iE '^(HTTP|location)'
+curl -sSI https://www.modalhop.com | head -1
 curl -sSI https://modalhop.com | head -1
 curl -sSI https://modalhop.com/styles.css | head -1
 ```
